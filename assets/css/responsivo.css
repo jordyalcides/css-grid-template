@@ -1,4 +1,17 @@
 @media screen and (min-width: 0) {
+
+    .menu__item {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .menu__link {
+        font-size: 1rem;
+        width: auto;
+        margin: 0.75rem 0;
+        padding: 0 0.75rem;
+    }
+
     .destaques__principal, .destaques__categorias {
         grid-column: 1 / 5;
     }
@@ -49,6 +62,19 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .menu__item {
+        justify-content: flex-start;
+        width: 50%;
+    }
+    
+    .menu__link {
+        font-size: 1rem;
+        width: auto;
+        margin: 0.75rem 0;
+        padding: 0 0.75rem;
+    }
+
     .destaques__principal {
         grid-column: 1 / 4;
     }
