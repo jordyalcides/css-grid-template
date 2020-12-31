@@ -1,0 +1,120 @@
+@media screen and (min-width: 0) {
+    .destaques__principal, .destaques__categorias {
+        grid-column: 1 / 5;
+    }
+
+    .destaques__categorias___lista {
+        flex-flow: column nowrap;
+    }
+
+    .destaques__categorias___item {
+        width: 100%;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .destaques__secundario:nth-child(2) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(3) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(4) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .destaques__secundario:nth-child(5) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .populares__conteudo {
+        flex-flow: column nowrap;
+    }
+
+    .populares__card {
+        grid-template-rows: 150px auto;
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .destaques__principal {
+        grid-column: 1 / 4;
+    }
+
+    .destaques__secundario:nth-child(2) {
+        display: grid;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
+
+    .destaques__secundario:nth-child(3) {
+        display: grid;
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+    }
+
+    .destaques__secundario:nth-child(4) {
+        display: grid;
+        grid-column: 4 / 4;
+        grid-row: 3 / 3;
+    }
+
+    .destaques__secundario:nth-child(5) {
+        display: grid;
+        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+    }
+
+    .destaques__categorias {
+        grid-column: 1 / 3;
+    }
+
+    .destaques__categorias___lista {
+        flex-flow: row wrap;
+    }
+
+    .destaques__categorias___item {
+        width: calc(50% - 0.3rem);
+        padding: 1rem;
+    }
+
+    .populares__conteudo {
+        flex-flow: row wrap;
+    }
+
+    .populares__card {
+        grid-template-rows: 173px auto;
+        width: calc(50% - 1rem);
+        margin: 0 1rem 2rem 0;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    
+    .populares__card {
+        width: calc(33.33% - 1rem);
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .populares__card {
+        margin: 0 1rem 0 0;
+        width: calc(20% - 1rem);
+    }
+
+}
