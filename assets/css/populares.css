@@ -1,5 +1,5 @@
 .populares {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .populares__cabecalho {
@@ -66,7 +66,7 @@
 }
 
 .populares__card___titulo {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .populares__card___data {
